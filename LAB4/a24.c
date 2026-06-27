@@ -1,27 +1,39 @@
-#include <stdio.h>
+#include<stdio.h>
+int main(){
 
-int main() {
-    int arr[10] = {10, 20, 30, 40, 50}; 
-    int size = 5; 
-    int element = 25;
-    int index = 2; 
-    int i;
+    int n ;
+    
+    printf("Enter size of array :- ");
+    scanf("%d",&n);
 
-    if (size >= 10 || index < 0 || index > size) {
-        printf("Error: Invalid operation.\n");
-    } else {
-        for (i = size; i > index; i--) {
-            arr[i] = arr[i - 1];
-        }
+    int arr[n+1];
 
-        arr[index] = element;
-        size++;
-
-        for(i = 0; i < size; i++) {
-            printf("%d ", arr[i]);
-        }
-        printf("\n");
+    for (int i = 0; i < (n); i++)
+    {
+        printf("Enter element %d :- ",(i+1));
+        scanf("%d",&arr[i]);
     }
 
-    return 0;
+    int element,location;
+
+    printf("Enter element u want to add in this array :- ");
+    scanf("%d",&element);
+    
+    printf("Enter location :- ");
+    scanf("%d",&location);
+
+    for (int i = n; i > location; i--)
+    {
+        arr[i] = arr[i - 1] ; 
+        
+    }
+    
+    arr[location] = element ;
+
+    for (int i = 0; i < (n+1); i++)
+    {
+        printf("%d ",arr[i]);
+    }
+    
+
 }
