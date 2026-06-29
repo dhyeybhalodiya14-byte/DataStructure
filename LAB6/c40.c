@@ -13,7 +13,7 @@ int main() {
     struct Student *p = &s1;
 
     p->roll_no = 101;
-    strcpy(p->name, "Alex Mercer");
+    strcpy(p->name, "Dhyey Bhalodiya");
     strcpy(p->branch, "Computer Science");
     p->batch_no = 2026;
 

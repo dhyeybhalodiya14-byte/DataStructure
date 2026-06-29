@@ -1,37 +1,31 @@
 #include <stdio.h>
-int main()
-{
+#include <string.h>
 
-    int n,temp;
+int main() {
+    char str[100];
+    char *start, *end;
+    int isPalindrome = 1;
 
-    printf("enter n:- ");
-    scanf("%d", &n);
+    printf("Enter a word: ");
+    scanf("%99s", str);
 
-    int arr[n];
-    int *p = arr;
+    start = str;
+    end = str + strlen(str) - 1;
 
-    for (int i = 0; i < n; i++)
-    {
-        printf("Enter element %d :- ", (i + 1));
-        scanf("%d", (p + i));
+    while (start < end) {
+        if (*start != *end) {
+            isPalindrome = 0;
+            break;
+        }
+        start++;
+        end--;
     }
 
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            if ( *(p+j) > *(p+i) )
-            {
-                temp = *(p+i);
-                *(p+i) = *(p+j);
-                *(p+j) = temp ;
-
-            }
-        }    
-    }
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d ", *(p + i));
+    if (isPalindrome) {
+        printf("Given word is Palindrome\n");
+    } else {
+        printf("Given word is Not palindrome\n");
     }
 
+    return 0;
 }
