@@ -17,11 +17,10 @@ int main() {
     strcpy(p->branch, "Computer Science");
     p->batch_no = 2026;
 
-    printf("Student Details:\n");
-    printf("Roll No  : %d\n", p->roll_no);
-    printf("Name     : %s\n", p->name);
-    printf("Branch   : %s\n", p->branch);
-    printf("Batch No : %d\n", p->batch_no);
+    printf("Roll No :- %d\n", p->roll_no);
+    printf("Name :- %s\n", p->name);
+    printf("Branch :- %s\n", p->branch);
+    printf("Batch No :- %d\n", p->batch_no);
 
     return 0;
 }
