@@ -2,7 +2,7 @@
 
 int main() {
     int total_seconds, hours, remaining_seconds, minutes, seconds;
-    printf("Enter total seconds.... ");
+    printf("Enter total seconds :- ");
     scanf("%d", &total_seconds);
     
     hours = total_seconds / 3600;
