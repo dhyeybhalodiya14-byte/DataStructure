@@ -3,7 +3,7 @@
 
 struct Node{
     int data;
-    struct Node * next ;
+    struct Node * link ;
 };
 
 int main(){
@@ -20,10 +20,10 @@ int main(){
     printf("Enter value of node :- ");
     scanf("%d",&newNode->data);
 
-    newNode -> next = NULL ;
+    newNode -> link = NULL ;
 
     printf("Data of Node :- %d\n",newNode->data);
-    printf("Address of next Node :- %p\n",(void*)newNode->next);
+    printf("Address of next Node :- %p\n",(void*)newNode->link);
 
     free(newNode);
 
