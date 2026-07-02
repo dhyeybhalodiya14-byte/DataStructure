@@ -7,8 +7,6 @@ int main() {
     printf("Enter the number of rows for Pascal's Triangle: ");
     scanf("%d", &rows);
 
-    printf("\n--- Pascal's Triangle ---\n\n");
-
     for (i = 0; i < rows; i++) {
        
         for (space = 1; space <= rows - i; space++) {
@@ -24,6 +22,8 @@ int main() {
             }
             printf("%4d", coef);
         }
+
+        printf("\n");
         
     }
 

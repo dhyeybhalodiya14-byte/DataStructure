@@ -39,11 +39,10 @@ int main() {
     }
 
     
-    printf("\n--- Names in Alphabetical Order ---\n");
+    printf("Names in Alphabetical Order :- \n");
     for (i = 0; i < n; i++) {
         printf("%d. %s\n", i + 1, names[i]);
     }
-    printf("-----------------------------------\n");
 
     return 0;
 }
